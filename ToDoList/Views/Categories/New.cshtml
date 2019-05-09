@@ -1,11 +1,23 @@
-<h1>Add a category</h1>
-<p>Add a category here:</p>
 
-<form action="/categories" method="post">
-  <label for="categoryName">Category name</label>
-  <input id="categoryName" name="categoryName" type="text">
-  <button type="submit">Add</button>
-</form>
-
-<p><a href="/">Back home</a></p>
-<p><a href="/categories">Back to categories.</a></p>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>To Do List</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='~/css/styles.css' type="text/css">
+</head>
+<body>
+  <div class="container">
+    <h1>To Do List</h1>
+    <h2>You can add a new category here.</h2>
+    <form action="/categories" method="post">
+      <input id="categoryName" name="categoryName" type="text">
+      <button type="submit" class="btn btn-dark">Add new category</button>
+    </form>
+    <br>
+    <a href="/categories" class="btn btn-dark">Back to categories</a>
+    <a href="/" class="btn btn-dark">Back to homepage</a>
+  </div>
+</body>
+</html>

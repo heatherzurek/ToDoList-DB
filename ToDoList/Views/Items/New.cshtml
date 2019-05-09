@@ -1,8 +1,23 @@
-<h1>Add a new item to @Model.GetName()</h1>
-
-<form action='/categories/@Model.GetId()/items' method='post'>
-  <input id='categoryId' name='categoryId' type='hidden' value='@Model.GetId()'>
-  <label for='itemDescription'>Item description</label>
-  <input id='itemDescription' name='itemDescription' type='text'>
-  <button type='submit'>Add item</button>
-</form>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <title>To Do List</title>
+  <link rel='stylesheet' href='https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css'>
+  <link rel='stylesheet' href='~/css/styles.css' type="text/css">
+</head>
+<body>
+  <div class="container">
+    <h1>To Do List</h1>
+    <h2>You can add a new item to the <strong>@Model.GetName()</strong> category here.</h2>
+      <form action='/categories/@Model.GetId()/items' method='post'>
+        <input id='categoryId' name='categoryId' type='hidden' value='@Model.GetId()'>
+        <label for='itemDescription'>To do item:</label>
+        <input id='itemDescription' name='itemDescription' type='text' required>
+        <label for='itemDueDate'>Enter a due date:</label>
+        <input id='itemDueDate' name='itemDueDate' type='date' required>
+        <button type='submit' class="btn btn-dark">Add item</button>
+      </form>
+    </div>
+</body>
+</html>
