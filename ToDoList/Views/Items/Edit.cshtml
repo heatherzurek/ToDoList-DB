@@ -13,9 +13,9 @@
     <form action="/categories/@Model["category"].GetId()/items/@Model["item"].GetId()" method="post">
       <label for="newDescription">Name:</label>
       <input type="text" name="newDescription" value="@Model["item"].GetDescription()">
-      <button type="submit" class="btn btn-dark">Edit</button>
+      <button type="submit">Edit</button>
     </form>
-    <a href="/categories/@Model["category"].GetId()/items/@Model["item"].GetId()" class="btn btn-dark">Return to previous page</a>
+    <a href="/categories/@Model["category"].GetId()/items/@Model["item"].GetId()">Return to previous page</a>
   </div>
 </body>
 </html>

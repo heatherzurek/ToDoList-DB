@@ -19,13 +19,13 @@
       {
         @foreach (Item item in Model)
         {
-          <li><a href="/items/@item.GetId()" class="btn btn-dark">@item.GetDescription()</a></li>
+          <li><a href="/items/@item.GetId()">@item.GetDescription()</a></li>
         }
       }
     </ul>
-    <a href="/items/new" class="btn btn-dark">Add a new item</a>
+    <a href="/items/new">Add a new item</a>
     <form action="/items/delete" method="post">
-      <button type="submit" name="button" class="btn btn-dark">Clear all Items</button>
+      <button type="submit" name="button">Clear all Items</button>
     </form>
   </div>
 </body>

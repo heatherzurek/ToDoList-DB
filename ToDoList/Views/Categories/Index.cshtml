@@ -22,11 +22,11 @@
           @foreach (var category in Model)
           {
 
-            <a href="/categories/@category.GetId()" class="btn btn-dark">@category.GetName()</a><br>
+            <a href="/categories/@category.GetId()">@category.GetName()</a><br>
           }
         }
       </ul>
-      <a href="/" class="btn btn-dark">Back to homepage</a>
+      <a href="/">Back to homepage</a>
   </div>
 </body>
 </html>
